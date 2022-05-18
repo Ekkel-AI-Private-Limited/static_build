@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/coin/circulating-supply', indexRouter);
+app.use('/coin', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
